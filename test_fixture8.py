@@ -26,3 +26,5 @@ class TestMainPage1():
         browser.find_element_by_css_selector(".basket-mini .btn-group > a")
 
 # pytest -s -v -m smoke test_fixture8.py --> запустится тест с маркировкой smoke
+# pytest -s -v -m "not smoke" test_fixture8.py --> запуститься тест с маркировкой regression
+# pytest -s -v -m "smoke or regression" test_fixture8.py --> запустяться тесты с маркировками smoke и regression
